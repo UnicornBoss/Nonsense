@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="zh-hans">
         <Head>
-          <script src="https://unpkg.com/css-doodle@0.22.0/css-doodle.min.js"></script>
           <meta
             name="theme-color"
             content="#f9fafb"
