@@ -35,7 +35,7 @@ export default function Footer() {
                 博客
               </a>
             </Link>
-            <Link href="https://joggin.archy.club">
+            <Link href="https://jogging.archy.club">
               <a className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
                 跑步
               </a>
