@@ -29,8 +29,6 @@ export default async function handler(req, res) {
         }
       });
 
-      console.log('views: ' + views);
-
       return res.status(200).json({ total: views.count.toString() });
     }
   } catch (e) {
