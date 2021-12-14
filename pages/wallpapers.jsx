@@ -9,9 +9,9 @@ export default function Wallpapers() {
   return (
     <>
       <Head>
-        <title>{metaTitle} - Jay</title>
+        <title>{metaTitle} - Archy</title>
         <meta content={metaDesc} name="description" />
-        <meta property="og:title" content={`${metaTitle} - Jay`} />
+        <meta property="og:title" content={`${metaTitle} - Archy`} />
       </Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
