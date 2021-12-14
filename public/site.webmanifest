@@ -1,0 +1,7 @@
+{
+  "name": "Archy's portfolio",
+  "short_name": "I'm Archy",
+  "theme_color": "#111111",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
