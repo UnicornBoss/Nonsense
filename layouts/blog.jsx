@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import dayjs from '../lib/day'
 import Container from '../components/Container'
+import ViewCounter from '../components/ViewCounter';
+
 
 export default function BlogLayout({ blog, children }) {
   const formatDate = date => {
@@ -26,6 +28,11 @@ export default function BlogLayout({ blog, children }) {
               {formatDate(blog.updatedAt)}
             </p>
           </div>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
+            {blog.readingTime.text}
+            {` • `}
+            <ViewCounter slug={blog.slug} />
+          </p>
         </div>
         <div data-nosnippet className="w-full max-w-none mt-4 prose dark:prose-dark">
           {children}

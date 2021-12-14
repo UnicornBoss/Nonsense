@@ -27,11 +27,9 @@ export default function Blog({ allBlogs }) {
             {metaTitle}
           </h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
-          <div data-nosnippet className="flex flex-col">
             {sortedPostsData.map(blog => (
               <BlogPost key={blog.title} {...blog} />
             ))}
-          </div>
         </div>
       </Container>
     </>

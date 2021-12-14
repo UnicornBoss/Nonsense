@@ -2,8 +2,14 @@ import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 import remarkGfm from 'remark-gfm'
 import rehypePrism from 'rehype-prism-plus'
 import rehypeSlug from 'rehype-slug'
+import readingTime from 'reading-time'
 
 const computedFields = {
+  readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
+  wordCount: {
+    type: 'number',
+    resolve: (doc) => doc.body.raw.split(/\s+/gu).length
+  },
   slug: {
     type: 'string',
     resolve: doc => doc._raw.sourceFileName.replace(/\.mdx$/, '')
