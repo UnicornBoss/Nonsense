@@ -1,4 +1,4 @@
-const { spacing } = require('tailwindcss/defaultTheme')
+const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'blue-opaque': 'rgb(13 42 148 / 18%)',
         gray: {
           0: '#fff',
           100: '#fafafa',
@@ -22,6 +23,9 @@ module.exports = {
           800: '#222222',
           900: '#111111'
         }
+      },
+      fontFamily: {
+        sans: ['IBM Plex Sans', ...fontFamily.sans]
       },
       typography: theme => ({
         DEFAULT: {
