@@ -57,7 +57,7 @@ export default function Home({ mostRecentPostsData }) {
               Archy
             </h1>
             <h2 className="mb-4 text-gray-700 dark:text-gray-200">
-              技术经理, 当前在 <span className="font-semibold">DevHub</span>{" "}
+              技术经理, 当前在 <a className="font-bold text-teal-400" href="https://devhub.co">DevHub</a>{" "}
               任职.
             </h2>
             <p className="mb-16 text-gray-600 dark:text-gray-400">

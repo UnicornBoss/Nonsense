@@ -5,7 +5,7 @@ export default function Subscribe() {
         订阅周报系列
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
-        填写你的邮箱，来获取周报「废话连篇」最新文章
+        填写你的邮箱，来获取周报「<span className="font-bold text-blue-500">废话连篇</span>」最新文章
       </p>
       <form
         action="https://www.getrevue.co/profile/monkeyboss/add_subscriber"

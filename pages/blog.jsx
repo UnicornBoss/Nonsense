@@ -34,8 +34,8 @@ export default function Blog({ posts }) {
             博客
           </h1>
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-            {`自2014年以来，我一直在网上写作，主要是关于个人生活和程序开发。
-            总的来说，我已经在我的博客上写了${posts.length }篇文章。
+            {`自2021年起，我开始在网上写作，主要是关于个人生活和程序开发。
+            总的来说，我已经在我的博客上写了${posts.length}篇文章。
             使用下面的搜索，按标题进行筛选。`}
           </p>
           <div className="relative w-full mb-4">
