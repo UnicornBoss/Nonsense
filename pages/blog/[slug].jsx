@@ -36,6 +36,8 @@ export default function Blog({ blog }) {
         <title>{blog.title} - Archy</title>
         <meta content={blog.description} name="description" />
         <meta property="og:title" content={`${blog.title} - Archy`} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:image" content="/images/tool.png" />
       </Head>
       <article>
         <Component components={{ Image: RoundedImage }} />
