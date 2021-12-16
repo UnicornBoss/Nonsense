@@ -58,3 +58,15 @@ html.dark {
   position: relative;
   z-index: 99;
 }
+
+.react {
+  color: #57C3DB;
+}
+
+.react-red {
+  color: #B5535A;
+}
+
+span {
+  font-weight: 700;
+}
