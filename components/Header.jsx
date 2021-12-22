@@ -58,6 +58,7 @@ export default function Header() {
           <MobileMenu />
           <NavItem href="/" text="概览" />
           <NavItem href="/blog" text="博客" />
+          <NavItem href="https://www.craft.do/s/LG1F9HV1wheH1H" text="原则" />
         </div>
         <button
           aria-label="切换主题模式"
