@@ -16,3 +16,9 @@ model views {
   slug  String @id @db.VarChar(128)
   count BigInt @default(1)
 }
+
+model events {
+  id      String @id @db.VarChar(128)
+  content String
+  created DateTime @db.Timestamp
+}

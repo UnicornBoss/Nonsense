@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>{metaTitle} - Jay</title>
+        <title>{metaTitle} - Archy</title>
         <meta content={metaDesc} name="description" />
         <meta property="og:title" content={`${metaTitle} - Jay`} />
       </Head>
