@@ -70,3 +70,23 @@ html.dark {
 span {
   font-weight: 700;
 }
+
+tag {
+  @apply p-1;
+}
+
+tag.red {
+  @apply bg-red-400;
+}
+
+tag.blue {
+  @apply bg-blue-400
+}
+
+tag.green {
+  @apply bg-green-400
+}
+
+tag.yellow {
+  @apply bg-yellow-400
+}
