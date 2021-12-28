@@ -59,6 +59,7 @@ export default function Header() {
           <NavItem href="/" text="概览" />
           <NavItem href="/blog" text="博客" />
           <NavItem href="https://www.craft.do/s/LG1F9HV1wheH1H" text="原则" />
+          <NavItem href="https://rss3.bio/0x74310ed7CDbAFB156Dbdbe0324d26f963FDE5E03" text="RSS3" />
         </div>
         <button
           aria-label="切换主题模式"
