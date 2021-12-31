@@ -16,9 +16,3 @@ model views {
   slug  String @id @db.VarChar(128)
   count BigInt @default(1)
 }
-
-model events {
-  id      BigInt   @id @default(autoincrement())
-  content String
-  created DateTime @default(now())
-}
