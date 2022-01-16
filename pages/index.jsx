@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import { allBlogs } from ".contentlayer/data";
@@ -29,6 +30,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ mostRecentPostsData }) {
+  const router = useRouter();
+
   const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
 
   // Set the drag hook and define component movement based on gesture data
@@ -81,6 +84,9 @@ export default function Home({ mostRecentPostsData }) {
                 height={122}
                 width={122}
                 src="/images/Memoji.png"
+                onDoubleClick={() => {
+                  router.push("/flomo");
+                }}
               />
             </animated.div>
           </div>
