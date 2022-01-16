@@ -52,8 +52,9 @@ export default function Flomo({ authKey }) {
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 className="w-full h-44 p-4 bg-gray-200 dark:bg-gray-800 mb-4"
+                disabled={!isFlomoAuth}
               />
-              <button type="submit" className="bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg">Submit</button>
+              <button type="submit" className="bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg" disabled={!isFlomoAuth}>Submit</button>
             </form>
           </div>
           {!isFlomoAuth && (<div className="flex items-center justify-center w-full">
