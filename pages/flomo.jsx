@@ -45,7 +45,7 @@ export default function Flomo({ authKey }) {
       <Head></Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-          <div className={'w-full' + (isFlomoAuth ? '' : 'blur-sm')}>
+          <div className={'w-full ' + (isFlomoAuth ? '' : 'blur-sm')}>
             <form onSubmit={submitMemo}>
               <label className="text-xl font-bold block text-gray-700 dark:text-gray-400 mb-4">MEMO:</label>
               <textarea
