@@ -1,12 +1,9 @@
+import Link from "next/link";
+
 export default function Banner() {
   return (
     <div className="w-full bg-black text-white py-2 font-bold text-center overflow-scroll">
-      💎 利用Crafts做了自己的原则
-      <a href="https://www.craft.do/s/LG1F9HV1wheH1H" className="text-blue-500">
-        {' '}
-        Principles{' '}
-      </a>
-      主页，主要是受到张潇雨的播客和Ray Dalio的那本书影响。
+       📚 闭关读书中，具体内容详见<Link href="/media"><a className="text-blue-500">多媒体</a></Link>
     </div>
   );
 }
