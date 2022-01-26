@@ -68,6 +68,9 @@ export default function Footer() {
             <ExternalLink href="https://www.polywork.com/archyfan">
               Polywork
             </ExternalLink>
+            <ExternalLink href="https://rss3.bio/0x74310ed7CDbAFB156Dbdbe0324d26f963FDE5E03">
+              RSS3
+            </ExternalLink>
           </div>
         </div>
       </div>
