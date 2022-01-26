@@ -69,13 +69,21 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '200ms' }}
           >
+            <Link href="/media">
+              <a className="flex w-auto pb-4">多媒体</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '225ms' }}
+          >
             <Link href="/uses">
               <a className="flex w-auto pb-4">物品清单</a>
             </Link>
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '225ms' }}
+            style={{ transitionDelay: '250ms' }}
           >
             <Link href="/wallpapers">
               <a className="flex w-auto pb-4">壁纸</a>
