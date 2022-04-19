@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs && node ./scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -28,6 +29,7 @@
     "react-spring": "^9.3.2",
     "react-use": "^17.3.1",
     "swr": "^1.1.0",
+    "rss": "1.2.2",
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {

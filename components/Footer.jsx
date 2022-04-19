@@ -54,6 +54,11 @@ export default function Footer() {
                 壁纸
               </a>
             </Link>
+            <Link href="/feed.xml">
+              <a className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
+                RSS
+              </a>
+            </Link>
           </div>
           <div className="flex flex-col space-y-4">
             <ExternalLink href="https://github.com/UnicornBoss">
