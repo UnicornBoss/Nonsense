@@ -1,10 +1,10 @@
 import { writeFileSync } from 'fs';
 import RSS from 'rss';
-import { allBlogs } from '../.contentlayer/generated/allBlogs.mjs';
+import { allBlogs } from '../.contentlayer/data/allBlogs.mjs';
 
 async function generate() {
   const feed = new RSS({
-    title: 'Lee Robinson',
+    title: 'Archy Fan',
     site_url: 'https://nonsense.archy.club',
     feed_url: 'https://nonsense.archy.club/feed.xml'
   });
@@ -12,7 +12,7 @@ async function generate() {
   allBlogs.map((post) => {
     feed.item({
       title: post.title,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `https://nonsense.archy.club/blog/${post.slug}`,
       date: post.publishedAt,
       description: post.summary
     });
