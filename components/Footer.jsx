@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Watermark from './Watermark';
 import NowPlaying from './NowPlaying';
 import Script from 'next/script';
 
@@ -20,11 +19,9 @@ export default function Footer() {
       data-nosnippet
       className="flex flex-col justify-center items-start w-full max-w-2xl mx-auto mb-8"
     >
-      <Script src="https://unpkg.com/css-doodle@0.22.0/css-doodle.min.js"></Script>
       <hr className="w-full mb-8 border border-gray-200 dark:border-gray-800" />
       <NowPlaying />
       <div className="flex gap-6 w-full md:flex-row-reverse flex-col">
-        <Watermark />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl pb-16">
           <div className="flex flex-col space-y-4">
             <Link href="/">
