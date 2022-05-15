@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import NowPlaying from './NowPlaying';
-import Script from 'next/script';
 
 const ExternalLink = ({ children, href }) => (
   <a
@@ -34,9 +33,9 @@ export default function Footer() {
                 博客
               </a>
             </Link>
-            <Link href="https://jogging.archy.club">
+            <Link href="/feed.xml">
               <a className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
-                跑步
+                RSS
               </a>
             </Link>
           </div>
@@ -49,11 +48,6 @@ export default function Footer() {
             <Link href="/wallpapers">
               <a className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
                 壁纸
-              </a>
-            </Link>
-            <Link href="/feed.xml">
-              <a className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
-                RSS
               </a>
             </Link>
           </div>
